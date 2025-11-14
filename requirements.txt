@@ -1,0 +1,4 @@
+Flask==2.3.4
+Flask-Cors==3.0.12
+Werkzeug==2.3.7
+reportlab==4.0.0
