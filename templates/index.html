@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Africa Rural Interventions Initiative (Africa-RII) - Restoring dignity and creating opportunities for Africa's most vulnerable communities through education, healthcare, and empowerment programs.">
+    <meta name="keywords" content="Africa-RII, NGO, education, healthcare, rural development, Nigeria, empowerment, scholarship">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Africa Rural Interventions Initiative | Empowering Rural Communities">
+    <meta property="og:description" content="Restoring dignity and creating opportunities for Africa's most vulnerable communities.">
+    <meta property="og:type" content="website">
+    
+    <title>Home | Africa Rural Interventions Initiative</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/Africa.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="has-hero">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo-section">
+                <img src="{{ url_for('static', filename='images/Africa.png') }}" alt="Africa-RII Logo" class="logo">
+                <span class="logo-text"></span>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="who-we-are.html" class="nav-link">Who We Are</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Programs</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tact.html">Project TACT</a></li>
+                        <li><a href="ajumobi.html">Àjùmòbí Scholarship</a></li>
+                        <li><a href="summer-school.html">Summer School</a></li>
+                        <li><a href="sisters-club.html">Sisters Club</a></li>
+                        <li><a href="chap.html">Community Health</a></li>
+                        <li><a href="youth-empowerment.html">Youth Empowerment</a></li>
+                        <li><a href="community-resource-centre.html">Resource Centre</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#donate" class="btn btn-primary nav-btn">Donate Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slideshow -->
+    <section class="hero" id="hero">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="Students in rural classroom">
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="Women empowerment workshop">
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="Community health program">
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/4.jpg') }}" alt="Student graduation">
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/5.jpg') }}" alt="Youth mentorship">
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/6.jpg') }}" alt="Rural community">
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text-box glass-card">
+                    <h1 class="hero-title" style = "color: white;" >Restoring dignity and creating opportunities for Africa's most vulnerable communities.</h1>
+                    <div class="hero-buttons">
+                        <a href="#donate" class="btn btn-primary btn-lg">Donate Now</a>
+                        <a href="who-we-are.html" class="btn btn-outline btn-lg" style = "color: white;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide-indicators" id="slideIndicators"></div>
+    </section>
+
+    <!-- Impact Statistics -->
+    <section class="impact-stats" id="impact-stats">
+        <div class="container">
+            <h2 class="section-title">Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Programs</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Events Held</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="2000">0</div>
+                    <div class="stat-label">Beneficiaries Impacted</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="7">0</div>
+                    <div class="stat-label">Communities Reached</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="13">0</div>
+                    <div class="stat-label">Years of Sustained Impact</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="who-we-are" id="who-we-are">
+        <div class="container">
+            <h2 class="section-title">Who We Are</h2>
+            <div class="who-grid">
+                <div class="who-content">
+                    <p class="lead">This journey started in 2012 with Train A Child Today (TACT), Africa Rural Interventions Initiative (Africa-RII) began as a response to the educational and socio-economic challenges faced by underserved communities in Nigeria by providing school supplies to primary school students from rural communities.</p>
+                    
+                    <p>With a deep belief in restoring human dignity through education, skills and mentorship programmes as empowerment strategy, Africa-RII has grown from providing school supplies to primary and secondary school students to establishing a Community Resource Center in Ilora—a safe space for learning, skill acquisition, and mentorship.</p>
+                    
+                    <p>Since 2019, Africa-RII has expanded its impact through annual free summer schools, JAMB and university tuition scholarship programs, and youth-focused career mentorship, gender advocacy and mentorship, directly addressing literacy gaps, access to higher education, gender inequalities and economic opportunities for students and young adults.</p>
+                    
+                    <p>Today, Africa-RII is committed to driving long-term change through education, skill acquisition, healthcare awareness, and economic empowerment programs. By working at the intersection of education, health, economic sustainability, and youth development, Africa-RII continues to create lasting change, empowering individuals and communities to break the cycle of poverty and build a future of opportunity and resilience.</p>
+                    
+                    <a href="who-we-are.html" class="btn btn-secondary">Learn More About Us</a>
+                </div>
+                
+                <div class="video-container glass-card">
+                    <h3>Our Story</h3>
+                    <div class="video-placeholder">
+                        <p>Video Coming Soon</p>
+                        <p class="small-text">Watch our journey and impact on communities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Programs -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <h2 class="section-title">Our Programs</h2>
+            <p class="section-subtitle">Comprehensive interventions addressing education, health, and economic empowerment</p>
+            
+            <div class="programs-grid">
+                <div class="program-card glass-card">
+                    <div class="program-icon"><i class="fas fa-book"></i></div>
+                    <h3>Project TACT</h3>
+                    <p>Train A Child Today - Providing educational support for children in rural Nigeria through school supplies, mentorship, and holistic development.</p>
+                    <a href="tact.html" class="btn btn-text">Learn More →</a>
+                </div>
+                
+                <div class="program-card glass-card">
+                    <div class="program-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Àjùmòbí Scholarship</h3>
+                    <p>Supporting students financially through examination fees, tuition assistance, and mentorship to pursue higher education.</p>
+                    <a href="ajumobi.html" class="btn btn-text">Learn More →</a>
+                </div>
+                
+                <div class="program-card glass-card">
+                    <div class="program-icon"><i class="fas fa-sun"></i></div>
+                    <h3>Free Summer School</h3>
+                    <p>Annual 4-week program providing structured learning, meals, and enrichment activities for rural students during school breaks.</p>
+                    <a href="summer-school.html" class="btn btn-text">Learn More →</a>
+                </div>
+                
+                <div class="program-card glass-card">
+                    <div class="program-icon"><i class="fas fa-venus"></i></div>
+                    <h3>Sisters Club</h3>
+                    <p>Gender advocacy, rights education, and mentorship program empowering young women and girls.</p>
+                    <a href="sisters-club.html" class="btn btn-text">Learn More →</a>
+                </div>
+                
+                <div class="program-card glass-card">
+                    <div class="program-icon"><i class="fas fa-hospital"></i></div>
+                    <h3>Community Health Program</h3>
+                    <p>Health awareness campaigns, PHC support, and community-led health advocacy improving rural healthcare access.</p>
+                    <a href="chap.html" class="btn btn-text">Learn More →</a>
+                </div>
+                
+                <div class="program-card glass-card">
+                    <div class="program-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Youth & Women Empowerment</h3>
+                    <p>Skill acquisition training in digital skills, crafts, and entrepreneurship fostering economic independence.</p>
+                    <a href="youth-empowerment.html" class="btn btn-text">Learn More →</a>
+                </div>
+                
+                <div class="program-card glass-card">
+                    <div class="program-icon"><i class="fas fa-university"></i></div>
+                    <h3>Community Resource Centre</h3>
+                    <p>A safe space in Ilora providing library access, skill training, mentorship, and support for vulnerable community members.</p>
+                    <a href="community-resource-centre.html" class="btn btn-text">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners" id="partners">
+        <div class="container">
+            <h2 class="section-title">Our Partners</h2>
+            <p class="section-subtitle">Together, we're building a brighter future for rural communities</p>
+            
+            <div class="partners-grid">
+                <div class="partner-logo glass-card">
+                    <img src="{{ url_for('static', filename='images/w.png') }}" alt="Partner organization">
+                </div>
+                <div class="partner-logo glass-card">
+                    <img src="{{ url_for('static', filename='images/imo.png') }}" alt="Partner organization">
+                </div>
+                <div class="partner-logo glass-card">
+                    <img src="{{ url_for('static', filename='images/kljb.png') }}" alt="Partner organization">
+                </div>
+            </div>
+            
+            <div class="partner-cta">
+                <p class="lead">Interested in partnering with us?</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="join-us" id="join-us">
+        <div class="container">
+            <div class="join-grid">
+                <div class="join-content">
+                    <h2>Be Part of This Movement</h2>
+                    <p class="lead">Partner with us, donate, or volunteer to help us build a brighter future for the youths living in rural communities.</p>
+                    
+                    <div class="join-options">
+                        <div class="join-option glass-card">
+                            <h3>Volunteer</h3>
+                            <p>Share your time and skills to make a direct impact in communities.</p>
+                            <a href="contact.html" class="btn btn-outline">Join Our Team</a>
+                        </div>
+                        
+                        <div class="join-option glass-card">
+                            <h3>Partner</h3>
+                            <p>Collaborate with us to amplify our impact and reach more communities.</p>
+                            <a href="contact.html" class="btn btn-outline">Partner With Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section class="donate-section" id="donate">
+        <div class="container">
+            <div class="donate-content glass-card">
+                <h2>Support Our Mission</h2>
+                <p class="lead">Your donation directly impacts lives, providing education, healthcare, and economic opportunities to those who need it most.</p>
+                
+                <form class="donate-form" id="donateForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="donate-name">Full Name</label>
+                            <input type="text" id="donate-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="donate-email">Email Address</label>
+                            <input type="email" id="donate-email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="donate-amount">Donation Amount (Optional)</label>
+                        <input type="text" id="donate-amount" name="amount" placeholder="Enter amount">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="donate-message">Message (Optional)</label>
+                        <textarea id="donate-message" name="message" rows="4" placeholder="Tell us about your motivation to support Africa-RII"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg">Submit Donation Interest</button>
+                    <p class="form-note">We will contact you with donation details and payment options.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo-section">
+                        <img src="{{ url_for('static', filename='images/Africa.png') }}" alt="Africa-RII Logo" class="footer-logo">
+                        <h3></h3>
+                    </div>
+                    <p>Restoring dignity and creating opportunities for Africa's most vulnerable communities.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                                                <!-- Twitter -->
+                        <a href="https://twitter.com/yourpage" target="_blank" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1DA1F2" viewBox="0 0 24 24">
+                                <path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195a4.918 4.918 0 0 0-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 0 0-.666 2.475c0 1.708.869 3.215 2.188 4.099a4.904 4.904 0 0 1-2.228-.616c-.054 1.98 1.397 3.83 3.448 4.243a4.935 4.935 0 0 1-2.224.085c.626 1.956 2.444 3.377 4.6 3.417A9.867 9.867 0 0 1 0 19.54a13.94 13.94 0 0 0 7.548 2.212c9.058 0 14.01-7.496 14.01-13.986 0-.21-.005-.423-.014-.634A10.012 10.012 0 0 0 24 4.557z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/yourpage" target="_blank" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#E1306C" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.342 3.608 1.317.975.975 1.255 2.242 1.317 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.342 2.633-1.317 3.608-.975.975-2.242 1.255-3.608 1.317-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.342-3.608-1.317-.975-.975-1.255-2.242-1.317-3.608-.058-1.265-.069-1.645-.069-4.849s.012-3.584.07-4.849c.062-1.366.342-2.633 1.317-3.608.975-.975 2.242-1.255 3.608-1.317C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.773.131 4.602.36 3.603 1.358 2.604 2.357 2.375 3.528 2.316 4.807.257 5.333.257 8.741.257 12s.013 6.667.072 7.947c.059 1.279.288 2.45 1.287 3.449 1 .999 2.171 1.228 3.449 1.287C8.332 23.987 8.741 24 12 24s3.667-.013 4.947-.072c1.279-.059 2.45-.288 3.449-1.287 1-.999 1.228-2.17 1.287-3.449C23.987 15.667 24 15.259 24 12s-.013-3.667-.072-4.947c-.059-1.279-.288-2.45-1.287-3.449C21.67 2.388 20.499 2.159 19.22 2.1 17.941 2.041 17.532 2.028 14.274 2.028zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.879 1.44 1.44 0 0 0 0-2.879z"/>
+                            </svg>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/in/yourpage" target="_blank" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0077B5" viewBox="0 0 24 24">
+                                <path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0zM7.08 20.452H3.542V9h3.538v11.452zM5.311 7.615c-1.134 0-2.051-.922-2.051-2.058s.917-2.057 2.051-2.057c1.135 0 2.052.922 2.052 2.057s-.917 2.058-2.052 2.058zM20.452 20.452h-3.538v-5.604c0-1.336-.025-3.058-1.862-3.058-1.864 0-2.15 1.454-2.15 2.957v5.705h-3.538V9h3.398v1.561h.049c.473-.896 1.63-1.84 3.356-1.84 3.592 0 4.255 2.365 4.255 5.442v6.289z"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="who-we-are.html">Who We Are</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Our Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="tact.html">Project TACT</a></li>
+                        <li><a href="ajumobi.html">Àjùmòbí Scholarship</a></li>
+                        <li><a href="summer-school.html">Summer School</a></li>
+                        <li><a href="sisters-club.html">Sisters Club</a></li>
+                        <li><a href="chap.html">Community Health</a></li>
+                        <li><a href="youth-empowerment.html">Youth Empowerment</a></li>
+                        <li><a href="community-resource-centre.html">Resource Centre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <!-- Email -->
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:6px;">
+                                <path d="M12 13.065L.6 4.5V19.5h22.8V4.5L12 13.065zM12 11.47l11.4-8.57H.6l11.4 8.57z"/>
+                            </svg>
+                            <a href="mailto:info@africarii.org" style="color:#fff; text-decoration:none;">info@africarii.org</a>
+                        </li>
+
+                        <!-- Location -->
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:6px;">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                            </svg>
+                            Ilora, Oyo State, Nigeria
+                        </li>
+
+                        <!-- Website -->
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:6px;">
+                                <path d="M12 0C5.372 0 0 5.373 0 12c0 6.627 5.372 12 12 12 6.627 0 12-5.373 12-12C24 5.373 18.627 0 12 0zm6 12c0 1.326-.268 2.586-.744 3.744l-8.999-8.999C9.414 6.268 10.674 6 12 6c3.313 0 6 2.687 6 6zm-12 0c0-1.326.268-2.586.744-3.744l8.999 8.999C14.586 17.732 13.326 18 12 18c-3.313 0-6-2.687-6-6z"/>
+                            </svg>
+                            <a href="https://www.africarii.org" target="_blank" style="color:#fff; text-decoration:none;">www.africarii.org</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Africa Rural Interventions Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

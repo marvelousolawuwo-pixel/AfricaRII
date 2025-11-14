@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Resource Centre | Africa-RII</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/Africa-RII_organizational_logo_design_99bbc7d8.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo-section">
+                <img src="{{ url_for('static', filename='images/Africa.png') }}" alt="Africa-RII Logo" class="logo">
+                <span class="logo-text"></span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="who-we-are.html" class="nav-link">Who We Are</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link active">Programs</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tact.html">Project TACT</a></li>
+                        <li><a href="ajumobi.html">Àjùmòbí Scholarship</a></li>
+                        <li><a href="summer-school.html">Summer School</a></li>
+                        <li><a href="sisters-club.html">Sisters Club</a></li>
+                        <li><a href="chap.html">Community Health</a></li>
+                        <li><a href="youth-empowerment.html">Youth Empowerment</a></li>
+                        <li><a href="community-resource-centre.html">Resource Centre</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html#donate" class="btn btn-primary nav-btn">Donate Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header program-header">
+        <div class="container">
+            <h1>Community Resource Centre, Ilora</h1>
+            <p class="subtitle">A Story of Hope, Learning, and Possibility</p>
+            <button class="btn btn-secondary" onclick="window.location.href='/api/generate-pdf/crc'">Download PDF Report</button>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>A Safe Space for Learning</h2>
+            <div class="content-box glass-card">
+                <p class="lead">In a community of more than 150,000 people in Ilora, there was no public library, no youth centre, and no safe space where children and young people could learn, dream, and prepare for their futures.</p>
+                <p>In 2020, Africa-RII transformed a former family home into the Ilora Community Resource Centre—a space filled with books, opportunities, and hope.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="approach-section">
+        <div class="container">
+            <h2>What We Offer</h2>
+                <div class="approach-grid">
+                    <div class="approach-card glass-card">
+                        <div class="approach-icon"><i class="fas fa-book"></i></div>
+                        <h3>Library & Reading Space</h3>
+                        <p>A conducive reading and book-lending space for the local community.</p>
+                    </div>
+                    <div class="approach-card glass-card">
+                        <div class="approach-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Skill Acquisition Centre</h3>
+                        <p>Mentorship program towards self-reliance for secondary school leavers and youths.</p>
+                    </div>
+                    <div class="approach-card glass-card">
+                        <div class="approach-icon"><i class="fas fa-home"></i></div>
+                        <h3>Safe Space</h3>
+                        <p>A haven for children, youths, and women exposed to structural violence.</p>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <div class="container">
+            <h2>Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content"><h3>Planting the Seed</h3><p>Fundraising campaign raised €3,000 to renovate the Stephen Titilola Ajayi family house</p></div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-content"><h3>Opening the Doors</h3><p>Centre officially opened, providing library access and safe learning spaces</p></div>
+                </div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-year">2024-2025</div>
+                    <div class="timeline-content"><h3>Flourishing Pathways</h3><p>Expanded programs, mentorship, and community impact</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content glass-card">
+                <h2>Support the Resource Centre</h2>
+                <p>Help us maintain and expand this vital community space.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#donate" class="btn btn-primary btn-lg">Donate Now</a>
+                    <a href="contact.html" class="btn btn-outline btn-lg">Get Involved</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo-section">
+                        <img src="{{ url_for('static', filename='images/Africa.png') }}" alt="Africa-RII Logo" class="footer-logo">
+                        <h3></h3>
+                    </div>
+                    <p>Restoring dignity and creating opportunities for Africa's most vulnerable communities.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                                                <!-- Twitter -->
+                        <a href="https://twitter.com/yourpage" target="_blank" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1DA1F2" viewBox="0 0 24 24">
+                                <path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195a4.918 4.918 0 0 0-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 0 0-.666 2.475c0 1.708.869 3.215 2.188 4.099a4.904 4.904 0 0 1-2.228-.616c-.054 1.98 1.397 3.83 3.448 4.243a4.935 4.935 0 0 1-2.224.085c.626 1.956 2.444 3.377 4.6 3.417A9.867 9.867 0 0 1 0 19.54a13.94 13.94 0 0 0 7.548 2.212c9.058 0 14.01-7.496 14.01-13.986 0-.21-.005-.423-.014-.634A10.012 10.012 0 0 0 24 4.557z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/yourpage" target="_blank" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#E1306C" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.342 3.608 1.317.975.975 1.255 2.242 1.317 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.342 2.633-1.317 3.608-.975.975-2.242 1.255-3.608 1.317-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.342-3.608-1.317-.975-.975-1.255-2.242-1.317-3.608-.058-1.265-.069-1.645-.069-4.849s.012-3.584.07-4.849c.062-1.366.342-2.633 1.317-3.608.975-.975 2.242-1.255 3.608-1.317C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.773.131 4.602.36 3.603 1.358 2.604 2.357 2.375 3.528 2.316 4.807.257 5.333.257 8.741.257 12s.013 6.667.072 7.947c.059 1.279.288 2.45 1.287 3.449 1 .999 2.171 1.228 3.449 1.287C8.332 23.987 8.741 24 12 24s3.667-.013 4.947-.072c1.279-.059 2.45-.288 3.449-1.287 1-.999 1.228-2.17 1.287-3.449C23.987 15.667 24 15.259 24 12s-.013-3.667-.072-4.947c-.059-1.279-.288-2.45-1.287-3.449C21.67 2.388 20.499 2.159 19.22 2.1 17.941 2.041 17.532 2.028 14.274 2.028zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.879 1.44 1.44 0 0 0 0-2.879z"/>
+                            </svg>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/in/yourpage" target="_blank" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0077B5" viewBox="0 0 24 24">
+                                <path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0zM7.08 20.452H3.542V9h3.538v11.452zM5.311 7.615c-1.134 0-2.051-.922-2.051-2.058s.917-2.057 2.051-2.057c1.135 0 2.052.922 2.052 2.057s-.917 2.058-2.052 2.058zM20.452 20.452h-3.538v-5.604c0-1.336-.025-3.058-1.862-3.058-1.864 0-2.15 1.454-2.15 2.957v5.705h-3.538V9h3.398v1.561h.049c.473-.896 1.63-1.84 3.356-1.84 3.592 0 4.255 2.365 4.255 5.442v6.289z"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="who-we-are.html">Who We Are</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Our Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="tact.html">Project TACT</a></li>
+                        <li><a href="ajumobi.html">Àjùmòbí Scholarship</a></li>
+                        <li><a href="summer-school.html">Summer School</a></li>
+                        <li><a href="sisters-club.html">Sisters Club</a></li>
+                        <li><a href="chap.html">Community Health</a></li>
+                        <li><a href="youth-empowerment.html">Youth Empowerment</a></li>
+                        <li><a href="community-resource-centre.html">Resource Centre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <!-- Email -->
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:6px;">
+                                <path d="M12 13.065L.6 4.5V19.5h22.8V4.5L12 13.065zM12 11.47l11.4-8.57H.6l11.4 8.57z"/>
+                            </svg>
+                            <a href="mailto:info@africarii.org" style="color:#fff; text-decoration:none;">info@africarii.org</a>
+                        </li>
+
+                        <!-- Location -->
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:6px;">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+                            </svg>
+                            Ilora, Oyo State, Nigeria
+                        </li>
+
+                        <!-- Website -->
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:6px;">
+                                <path d="M12 0C5.372 0 0 5.373 0 12c0 6.627 5.372 12 12 12 6.627 0 12-5.373 12-12C24 5.373 18.627 0 12 0zm6 12c0 1.326-.268 2.586-.744 3.744l-8.999-8.999C9.414 6.268 10.674 6 12 6c3.313 0 6 2.687 6 6zm-12 0c0-1.326.268-2.586.744-3.744l8.999 8.999C14.586 17.732 13.326 18 12 18c-3.313 0-6-2.687-6-6z"/>
+                            </svg>
+                            <a href="https://www.africarii.org" target="_blank" style="color:#fff; text-decoration:none;">www.africarii.org</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Africa Rural Interventions Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
